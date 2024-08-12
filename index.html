@@ -1,120 +1,83 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FunctionLayer®</title>
+    <title>FunctionLayer</title>
     <meta name="description" content="Human approval for agentic workflows." />
     <!-- prettier-ignore -->
-    <meta name="image" content="https://placehold.co/600x300" />
+    <meta name="image" content="https://res.cloudinary.com/moona/image/upload/v1723510838/FunctionLayer/FunctionLayer-thumb-aug12_psjtfi.png" />
     <meta property="og:description" content="Human approval for agentic workflows." />
     <!-- prettier-ignore -->
-    <meta property="og:image" content="hhttps://placehold.co/600x300" />
-    <meta property="og:title" content="FunctionLayer®" />
+    <meta property="og:image" content="https://res.cloudinary.com/moona/image/upload/v1723510838/FunctionLayer/FunctionLayer-thumb-aug12_psjtfi.png" />
+    <meta property="og:title" content="FunctionLayer" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://functionlayer.com/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
     <script defer src="https://kit.fontawesome.com/484ee0d259.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
     <script defer src="scripts.js"></script>
   </head>
   <body>
+    <header id="header">
+      <div class="brand">FunctionLayer</div>
+      <nav id="header-nav">
+        <div class="button jump" data-id="platform">Product</div>
+        <a class="button" href="https://github.com/functionlayer/functionlayer" target="_blank">Docs</a>
+        <div class="button jump" data-id="pricing">Pricing</div>
+        <a class="button primary" href="https://app.functionlayer.com" target="_blank">Sign In</a>
+      </nav>
+    </header>
     <section id="hero">
       <div class="content">
-        <div class="brand"><i class="far fa-layer-plus"></i> FunctionLayer</div>
         <h1>Human Approval for <em>Agentic</em> Workflows</h1>
         <p class="lede">
           Agents are taking over how we do AI, but in order to let them do real, meaningful work, they require
           supervision and training.
         </p>
-        <div class="box" id="see-plans">See plans <i class="far fa-long-arrow-right"></i></div>
+        <a class="bigger primary button" href="https://app.functionlayer.com" target="_blank">
+          Get started <i class="far fa-long-arrow-right"></i>
+        </a>
+        <a class="bigger button" href="https://github.com/functionlayer/functionlayer" target="_blank">
+          <i class="fab fa-github"></i> View on GitHub
+        </a>
       </div>
     </section>
-    <section id="video">
-      <div class="content">
-        <iframe
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-          frameborder="0"
-          height="540"
-          referrerpolicy="strict-origin-when-cross-origin"
-          src="https://www.youtube.com/embed/oXLPwMn5l9o?autoplay=1&controls=0"
-          title="YouTube video player"
-          width="960"
-        ></iframe>
-      </div>
-    </section>
-    <section id="loved">
-      <div class="content">
-        <p class="big">Loved by teams at</p>
-        <div id="logos">
-          <i class="fab fa-airbnb"></i>
-          <i class="fab fa-amazon"></i>
-          <i class="fab fa-google"></i>
-          <i class="fab fa-meta"></i>
-          <i class="fab fa-salesforce"></i>
-          <i class="fab fa-stripe"></i>
-        </div>
-      </div>
-    </section>
-    <section class="invert" id="platform">
+    <section id="platform">
       <div class="content">
         <div class="caps">Platform</div>
         <h2>How it works</h2>
-        <p class="big">We believe in Keeping It Stupid Simple. #KISS</p>
         <div id="steps">
           <div>
-            <h1>01</h1>
-            <h4>Decorate</h4>
-            <p>Your AI agents need supervision…</p>
-            <i class="fal fa-robot"></i>
+            <h3>Decorate</h3>
+            <i class="fal fa-code"></i>
+            <p>Just a touch of code to slide AI messages into the flow of your team’s daily routine.</p>
           </div>
           <div>
-            <h1>02</h1>
-            <h4>Approve</h4>
-            <p>Keep the Human in the loop…</p>
-            <i class="fal fa-user-check"></i>
+            <h3>Approve</h3>
+            <i class="fab fa-slack"></i>
+            <p>Keep it easy — approve or tweak AI suggestions without leaving your favorite tools.</p>
           </div>
           <div>
-            <h1>03</h1>
-            <h4>Scale</h4>
-            <p>Now that we have trust, we can…</p>
-            <i class="fal fa-refresh"></i>
+            <h3>Scale</h3>
+            <i class="fal fa-badge-check"></i>
+            <p>Trust grows, AI learns, and soon it’s doing more of the heavy lifting with your seal of approval.</p>
           </div>
         </div>
+        <img
+          id="slack-approval"
+          src="https://res.cloudinary.com/moona/image/upload/v1723501315/FunctionLayer/functionlayer-slack-approval-aug12_br9tuu.png"
+        />
       </div>
     </section>
-    <section id="integrate">
+    <section>
       <div class="content">
-        <p class="big">Supports all the frameworks</p>
-        <div id="logos">
-          🦜🔗
-          <i class="fab fa-github"></i>
-          <i class="fab fa-google"></i>
-          <i class="fab fa-slack"></i>
-        </div>
-      </div>
-    </section>
-    <section id="team">
-      <div class="overlay"></div>
-      <div class="content">
-        <div class="caps">Team</div>
-        <h2>The team is good!</h2>
-      </div>
-    </section>
-    <section id="compliance">
-      <div class="content">
-        <p class="big">Compliant and secure infrastructure to protect your data</p>
-        <div>
-          <i class="far fa-badge-check"></i>
-          SOC2
-          <i class="far fa-file-shield"></i>
-          ISO 27001
-          <i class="far fa-lock"></i>
-          CCPA
-          <i class="far fa-key"></i>
-          GDPR
-          <i class="far fa-shield-check"></i>
+        <h2>Works with any stack</h2>
+        <div id="stacks">
+          <div>Python</div>
+          <div>Javascript</div>
+          <div>🦜🔗 LangChain</div>
+          <div>LlamaIndex</div>
+          <div>Haystack</div>
+          <div>CrewAI</div>
         </div>
       </div>
     </section>
@@ -125,10 +88,12 @@
         <p>Get started for FREE. Scale to Enterprise.</p>
         <div id="plans">
           <div id="plan-1">
-            <h3>Starter</h3>
-            <p>Forever free.</p>
+            <div>
+              <h3>Starter</h3>
+              <p class="big">Forever free.</p>
+            </div>
             <div class="price">$0/mo.</div>
-            <p>No commitment.<br />Pause or cancel anytime.</p>
+            <p class="lighter">No commitment.<br />Pause or cancel anytime.</p>
             <div class="list">
               <div class="item"><i class="far fa-check"></i> Works with all popular frameworks</div>
               <div class="item"><i class="far fa-check"></i> 100 approvals / month</div>
@@ -137,16 +102,17 @@
               <div class="item"><i class="far fa-check"></i> Send to Email</div>
               <div class="item"><i class="far fa-check"></i> Pause or cancel anytime</div>
             </div>
-            <a class="box" href="https://buy.stripe.com/7sI6qpdpE6K25Bm8ww">
-              Subscribe today <i class="far fa-long-arrow-right"></i>
+            <a class="bigger primary button" href="https://app.functionlayer.com" target="_blank">
+              Get started <i class="far fa-long-arrow-right"></i>
             </a>
-            <a class="text-link" href="https://calendly.com/moonadesign/figtree">Book a call</a>
           </div>
           <div id="plan-2">
-            <h3>Growth</h3>
-            <p>Always be growing.</p>
+            <div>
+              <h3>Growth</h3>
+              <p class="big">Always be growing.</p>
+            </div>
             <div class="price">$99/mo.</div>
-            <p>No commitment.<br />Pause or cancel anytime.</p>
+            <p class="lighter">No commitment.<br />Pause or cancel anytime.</p>
             <div class="list">
               <div class="item"><i class="far fa-check"></i> <b>1,000 approvals per month</b></div>
               <div class="item"><i class="far fa-check"></i> then $50 per 1k approvals</div>
@@ -157,16 +123,17 @@
               <div class="item"><i class="far fa-check"></i> Send to Slack, Email, SMS, MSTeams</div>
               <div class="item"><i class="far fa-check"></i> Pause or cancel anytime</div>
             </div>
-            <a class="box" href="https://buy.stripe.com/fZe2a95XcfgyfbW8wx">
-              Subscribe today <i class="far fa-long-arrow-right"></i>
+            <a class="bigger primary button" href="https://app.functionlayer.com" target="_blank">
+              Get started <i class="far fa-long-arrow-right"></i>
             </a>
-            <a class="text-link" href="https://calendly.com/moonadesign/figtree">Book a call</a>
           </div>
           <div id="plan-3">
-            <h3>Enterprise</h3>
-            <p>Unlimited approvals.</p>
-            <div class="price">$99/mo.</div>
-            <p>No commitment.<br />Pause or cancel anytime.</p>
+            <div>
+              <h3>Enterprise</h3>
+              <p class="big">Unlimited approvals.</p>
+            </div>
+            <div class="price">Get quote</div>
+            <p class="lighter">No commitment.<br />Pause or cancel anytime.</p>
             <div class="list">
               <div class="item"><i class="far fa-check"></i> <b>Unlimited approvals</b></div>
               <div class="item"><i class="far fa-check"></i> Unlimited users</div>
@@ -175,42 +142,25 @@
               <div class="item"><i class="far fa-check"></i> <b>Custom notification channels</b></div>
               <div class="item"><i class="far fa-check"></i> Pause or cancel anytime</div>
             </div>
-            <a class="box" href="https://buy.stripe.com/fZe2a95XcfgyfbW8wx">
-              Subscribe today <i class="far fa-long-arrow-right"></i>
-            </a>
-            <a class="text-link" href="https://calendly.com/moonadesign/figtree">Book a call</a>
+            <div class="bigger primary button">Get started <i class="far fa-long-arrow-right"></i></div>
           </div>
         </div>
         <div id="custom"></div>
       </div>
     </section>
-    <section id="faq" aria-labelledby="faq-title">
-      <div class="content">
-        <div class="caps">Support</div>
-        <h2 id="faq-title">Frequently Asked Questions</h2>
-        <div id="faq-list">
-          <details>
-            <summary>Question 1</summary>
-            <p>Answer</p>
-          </details>
-          <details>
-            <summary>Question 2</summary>
-            <p>Answer</p>
-          </details>
-        </div>
+    <footer id="footer">
+      <div class="stack">
+        <div class="brand">FunctionLayer</div>
+        <p class="lede">Human Approval for <em>Agentic</em> Workflows</p>
+        <p>Copyright © 2024 QueryTale LLC. All rights reserved.</p>
       </div>
-    </section>
-    <section class="invert" id="footer">
-      <div class="content">
-        <div class="caps">Ready</div>
-        <h2>Let’s do this.</h2>
-        <p class="big">Are you ready to level up your team and your time?</p>
-        <div class="text-link" id="lfg">Let’s go! <i class="far fa-long-arrow-right"></i></div>
-        <footer>
-          <div class="brand"><i class="far fa-layer-plus"></i> FunctionLayer</div>
-          <p>Copyright © 2024 QueryTale LLC. All rights reserved.</p>
-        </footer>
+      <div class="stack">
+        <b>Quick Links</b>
+        <div class="link jump" data-id="platform">Product</div>
+        <a class="link" href="https://github.com/functionlayer/functionlayer" target="_blank">Docs</a>
+        <div class="link jump" data-id="pricing">Pricing</div>
+        <a class="link" href="https://app.functionlayer.com" target="_blank">Sign In</a>
       </div>
-    </section>
+    </footer>
   </body>
 </html>
